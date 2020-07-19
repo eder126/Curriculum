@@ -1,24 +1,23 @@
-function showInfo(elem) {
-    var infor = document.getElementById(elem.id+'a');
-    var tags = document.getElementsByName("Edu");
-    var subs = document.getElementsByName("info");
-    for(var i = 0; i < subs.length; i++){
-        subs[i].classList.remove("displayinline");
-        tags[i].classList.remove("heavy");
-        subs[i].classList.add("displaynone");
-    }
-    elem.classList.add("heavy");
-    infor.classList.add("displayinline");
-};
+function showDesc(id) {
+    var desc = document.getElementsByClassName("educationCDesc")[0].children;
+    var course = document.getElementsByClassName("educationCourse")[0].children;
 
-function openNav(){
-    document.getElementsByClassName("sidebar")[0].style.width = "10%";
-    document.getElementsByClassName("divParent")[0].style.width = "90%";
-    document.getElementsByClassName("divParent")[0].style.marginLeft = "10%";
-};
+    for(var i = 0; i <desc.length; i++) {
+        desc[i].classList.add("displaynone");
+        desc[i].classList.remove("displayinline");
+        course[i].classList.remove("selected");
+    }
+
+    document.getElementById(id+"a").classList.add("displayinline");
+    document.getElementById(id).classList.add("selected");
+}
+
+function openNav(id){
+    document.getElementById("menuIcon").classList.add("displaynone");
+    document.getElementById("navBar").classList.remove("displaynone");
+}
 
 function closeNav(){
-    document.getElementsByClassName("sidebar")[0].style.width = "0";
-    document.getElementsByClassName("divParent")[0].style.width = "100%";
-    document.getElementsByClassName("divParent")[0].style.marginLeft = "0";
-};
+    document.getElementById("menuIcon").classList.remove("displaynone");
+    document.getElementById("navBar").classList.add("displaynone");
+}

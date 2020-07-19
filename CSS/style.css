@@ -4,137 +4,170 @@ html, body {
     margin: 0;
     scroll-snap-type: y mandatory;
     background-color: #F1F7ED;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    color: #313638;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.information{
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    padding: 1.5rem;
     overflow: auto;
 }
 
-.textCenter{
-    text-align: center !important;
+p, a, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
-
-.textLeft{
-    text-align: left !important;
+.summaryTitle, .educationTitle, .experienceTitle, .skillsTitle, .techTitle {
+    color: #3891A6;
+    text-align: center;
+    font-size: 2.3rem;
 }
 
-.textJustify{
-    text-align: justify !important;
-}
-
-.marginpadding{
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.fontFG {
-    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
-}
-
-.fontSZ1 {
-    font-size: 2rem;
-}
-
-.fontSZ2 {
-    font-size: 1.5rem !important;
-}
-
-.fontSZ3 {
-    font-size: 1rem !important;
-}
-
-.fontSZ4 {
-    font-size: 0.6rem !important;
-}
-
-.fontSZ5 {
-    font-size: 0.4rem !important;
-}
-
-.mainInfo {
+#Contact {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.padding50 {
-    padding: 50px;
+.titleSubtitle h1 {
+    font-size: 5rem;
 }
 
-.padding25 {
-    padding: 25px;
+.titleSubtitle h3 {
+    font-size: 3rem;
 }
 
-.fifty{
+.contact h3 {
+    font-size: 1.5rem;
+}
+
+.titleSubtitle, .contact {
     width: 50%;
+    text-align: center;
+    padding: 1rem;
 }
 
-.divParent {
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
+.PDF a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #313638;
+}
+
+.PDF a:hover {
+    cursor: pointer;
+    color: #3891A6;
+}
+
+.summary {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.experienceWrap {
     display: flex;
+    padding: 1rem;
 }
 
-.sidebar {
-    width: 0;
-    height: 100%;
-    background-color: #3891A6;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    box-sizing: border-box;
-}
-/*3891a6-e8e9eb-313638*/
-
-.panels {
-    width: 100%;
-    height: 100%;   
-}
-
-.divs {
-    scroll-snap-align: start;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.bloque {
-    background-color: #F1F7ED;
-}
-
-.borderbloque {
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.expPanel {
+.experienceContainer {
+    padding: 1rem;
     width: 33%;
-    float: left;
-    box-sizing: border-box;
-    padding: 10px;
 }
 
-.Half {
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding: 10px;
+.jobTitle {
+    font-size: 1.3rem;
+    text-align: center;
 }
 
-ul {
+.jobDetails {
+    font-size: 1.2rem;
+}
+
+.jobDetails ul li {
     list-style: none;
-    align-self: justify;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 .amazon {
     color: #ff9900;
 }
 
-.heavy {
-    color: #be7403;
+.cenfotec {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+.cenfoDegree {
+    font-size: 1.5rem;
+}
+
+.educationWrap {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.educationCourse, .educationCDesc {
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+.educationCourse h4 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.educationCourse h4:hover {
+    cursor: pointer;
+    color: #3891A6;
+}
+
+.selected {
+    color: #2e7788;
+    font-weight: bold;
+}
+
+.eDescPanel p {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.skillsContainer, .techContainer {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.skillsTitle, .techTitle {
+    padding-bottom: 4rem;
+}
+
+.skillsWrap, .techWrap {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.skillsWrap h5, .techWrap h5 {
+    padding-bottom: 2rem;
 }
 
 .displaynone {
@@ -143,18 +176,6 @@ ul {
 
 .displayinline {
     display: inline;
-}
-
-.prueba {
-    float: left;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-    color: #313638;
-}
-
-.title {
-    color: #3891A6 !important;
 }
 
 .fabMenu {
@@ -170,41 +191,29 @@ p, h1, h2, h3, h4, h5, h6 {
     opacity: 100%;
 }
 
-.Edu {
-    cursor: pointer;
+.navbar {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    box-sizing: border-box;
+    background-color: #3891A6;
+    border-radius: 10px;
 }
 
-.Edu:hover {
-    cursor: pointer;
-    color: #ff9900 !important;
+.navbar h4 {
+    display: inline-grid;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
-.sidebarMenu {
-    display: block;
-    padding: 5px;
+.navbar h4 a, .closeButton {
+    text-decoration: none;
+    cursor: pointer;
     color: #F1F7ED;
-    text-decoration: none;
-    cursor: pointer;
+    transition: 0.5s;
 }
 
-.sidebarMenu:hover {
-    color: #c8f7aa;
-}
-
-.close {
-    float: right;
-    text-align: right;
-}
-
-.close:hover {
-    color: black !important;
-}
-
-.PDF{
-    text-decoration: none;
+.navbar h4 a:hover, .closeButton:hover {
     color: #313638;
-}
-
-.PDF:hover {
-    color: #3891A6 !important;
 }

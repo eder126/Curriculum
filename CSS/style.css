@@ -77,11 +77,13 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .summary {
     font-size: 2rem;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 .experienceWrap {
     display: flex;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .experienceContainer {
@@ -184,6 +186,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     top: 30px;
     font-size: 1.5rem;
     opacity: 50%;
+    transition: 0.5s;
 }
 
 .fabMenu:hover {
@@ -216,4 +219,122 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
 .navbar h4 a:hover, .closeButton:hover {
     color: #313638;
+}
+
+#Skills {
+    box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .summaryTitle, .educationTitle, .experienceTitle, .skillsTitle, .techTitle {
+        font-size: 2rem;
+    }
+
+    .titleSubtitle h1 {
+        font-size: 3rem;
+    }
+    
+    .titleSubtitle h3 {
+        font-size: 2rem;
+    }
+    
+    .contact h3 {
+        font-size: 1rem;
+    }
+
+    .titleSubtitle, .contact {
+        padding: 0.5rem;
+    }
+
+    .summary {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+    
+    .experienceWrap {
+        display: inline;
+        padding: 1rem;
+    }
+    
+    .experienceContainer {
+        padding: 0.5rem;
+    }
+    
+    .jobTitle {
+        font-size: 1rem;
+    }
+    
+    .jobDetails {
+        font-size: 1rem;
+    }
+
+    .cenfotec {
+        font-size: 1.4rem;
+        padding: 1.5rem;
+    }
+    
+    .cenfoDegree {
+        font-size: 1rem;
+    }
+    
+    .educationCourse h4 {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .eDescPanel p {
+        font-size: 1rem;
+    }
+    
+    .skillsContainer, .techContainer {
+        padding: 0.5rem;
+    }
+    
+    .skillsTitle, .techTitle {
+        padding-bottom: 2rem;
+    }
+    
+    .skillsWrap, .techWrap {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .skillsWrap h5, .techWrap h5 {
+        padding-bottom: 1rem;
+    }
+
+
+
+    .titleSubtitle, .contact {
+        width: 50%;
+    }
+
+    .experienceContainer {
+        width: 100%;
+    }
+    
+    .educationCourse, .educationCDesc {
+        width: 100%;
+    }
+    
+    .skillsContainer, .techContainer {
+        width: 100%;
+    }
+
+    .jobDetails ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar h4 {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }

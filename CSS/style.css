@@ -152,6 +152,16 @@ p, a, h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem;
 }
 
+.eDescPanel a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #313638;
+}
+
+.eDescPanel a:hover {
+    color: #3891A6;
+}
+
 .skillsContainer, .techContainer {
     width: 50%;
     float: left;

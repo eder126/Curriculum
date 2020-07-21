@@ -155,11 +155,11 @@ p, a, h1, h2, h3, h4, h5, h6 {
 .eDescPanel a {
     text-decoration: none;
     cursor: pointer;
-    color: #313638;
+    color: #3891A6;
 }
 
 .eDescPanel a:hover {
-    color: #3891A6;
+    color: #2e7788;
 }
 
 .skillsContainer, .techContainer {
